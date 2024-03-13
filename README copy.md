@@ -9,11 +9,11 @@ The message is stored in a postgres database.
 ### Run the app
 1. Create a postgres instance using docker
 ```sh
-docker run --name hellospring_pg -d \
+docker run --name helloworld_pg -d \
     -p 5432:5432 \
-    -e POSTGRES_USER=hellospring \
-    -e POSTGRES_PASSWORD=hellospring \
-    -e POSTGRES_DB=hellospring \
+    -e POSTGRES_USER=helloworld \
+    -e POSTGRES_PASSWORD=helloworld \
+    -e POSTGRES_DB=helloworld \
     postgres:16-alpine
 ```
 2. Run the app
@@ -25,5 +25,5 @@ Access http://localhost:8080 in the browser
 
 ### Change database message:
 ```sh
-docker exec -it hellospring_pg psql -U hellospring -c "update home_message set message='test';"
+docker exec -it helloworld_pg psql -U helloworld -c "update home_message set message='test';"
 ```
