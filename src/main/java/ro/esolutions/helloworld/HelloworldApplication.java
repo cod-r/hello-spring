@@ -1,4 +1,4 @@
-package ro.esolutions.helloworld;
+package ro.codr.helloworld;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

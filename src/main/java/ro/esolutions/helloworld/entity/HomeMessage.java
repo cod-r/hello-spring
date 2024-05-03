@@ -1,4 +1,4 @@
-package ro.esolutions.helloworld.entity;
+package ro.codr.helloworld.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
